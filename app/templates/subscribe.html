@@ -1,0 +1,10 @@
+<head></head>
+<body><a href="{{ url_for('nav_index')}}">Index Page</a><p>
+<form action="" method="post" name="subscribe">
+	{{ form.hidden_tag() }}
+	Name: {{ form.name(size=40)   }}<p>
+	Email: {{ form.email(size=40) }}<p>
+	Contact Number: {{ form.phone_num(size=40) }}	
+	<p><input type="submit" value="Subscribe"></p>
+</form>
+</body>
